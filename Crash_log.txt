@@ -1,0 +1,108 @@
+05-19 17:42:55.018 2347-2347/? I/uvl: Making Creator dynamically
+05-19 17:42:55.026 2347-2347/? W/System: ClassLoader referenced unknown path: /data/user/0/com.google.android.gms/app_chimera/m/00000005/n/arm64-v8a
+05-19 17:42:55.060 2347-2347/? I/Google Maps Android API: Google Play services client version: 10298000
+05-19 17:42:55.065 2347-2347/? I/Google Maps Android API: Google Play services package version: 10298448
+05-19 17:42:55.297 726-726/? W/cnss_diag: type=1400 audit(0.0:4481357): avc: denied { search } for name="default" dev="tmpfs" ino=4943 scontext=u:r:wcnss_service:s0 tcontext=u:object_r:storage_file:s0 tclass=dir permissive=0
+05-19 17:42:55.297 726-726/? W/cnss_diag: type=1400 audit(0.0:4481358): avc: denied { search } for name="default" dev="tmpfs" ino=4943 scontext=u:r:wcnss_service:s0 tcontext=u:object_r:storage_file:s0 tclass=dir permissive=0
+05-19 17:42:55.330 2347-2347/? D/AndroidRuntime: Shutting down VM
+05-19 17:42:55.336 2347-2347/? I/GCore-Chimera-Crash: Cg8KCWNvbnRhaW5lchCs7T4=
+                                                      GCore-Chimera-Crash
+05-19 17:42:55.349 2347-2347/? I/DeviceDrDatabaseHelper: Cleaning stale data from database!
+05-19 17:42:55.370 2347-2347/? W/DeviceDoctorHandler: Crash Hash: aba2798090daef196c4b6afb7d3c64c8703dbff3
+05-19 17:42:55.373 2347-2347/? I/DeviceDoctorHandler: Not shushing due to process not found in the whitelist.
+                                                      
+                                                      --------- beginning of crash
+05-19 17:42:55.384 2347-2347/? E/AndroidRuntime: FATAL EXCEPTION: main
+                                                 Process: com.google.android.gms.ui, PID: 2347
+                                                 java.lang.RuntimeException: Unable to resume activity {com.google.android.gms/com.google.android.location.places.ui.placepicker.PlacePickerActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'void com.google.maps.api.android.lib6.impl.bq.o()' on a null object reference
+                                                     at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3110)
+                                                     at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3141)
+                                                     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2488)
+                                                     at android.app.ActivityThread.access$900(ActivityThread.java:153)
+                                                     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1349)
+                                                     at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                     at android.os.Looper.loop(Looper.java:148)
+                                                     at android.app.ActivityThread.main(ActivityThread.java:5438)
+                                                     at java.lang.reflect.Method.invoke(Native Method)
+                                                     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:738)
+                                                     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:628)
+                                                  Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'void com.google.maps.api.android.lib6.impl.bq.o()' on a null object reference
+                                                     at com.google.maps.api.android.lib6.impl.da.b(:com.google.android.gms.DynamiteModulesB:96)
+                                                     at com.google.android.gms.maps.internal.z.onTransact(:com.google.android.gms.DynamiteModulesB:73)
+                                                     at android.os.Binder.transact(Binder.java:387)
+                                                     at url.b(:com.google.android.gms:233)
+                                                     at upa.a(:com.google.android.gms:127)
+                                                     at omy.b(:com.google.android.gms:340)
+                                                     at omu.a(:com.google.android.gms:143)
+                                                     at com.google.android.gms.maps.MapView.a(:com.google.android.gms:7332)
+                                                     at amzd.onResume(:com.google.android.gms:92)
+                                                     at com.google.android.chimera.FragmentProxy.onResume(:com.google.android.gms:433)
+                                                     at gm.a(:com.google.android.gms:12120)
+                                                     at gm.a(:com.google.android.gms:1286)
+                                                     at gm.a(:com.google.android.gms:1268)
+                                                     at gm.p(:com.google.android.gms:2153)
+                                                     at gm.a(:com.google.android.gms:12126)
+                                                     at gm.a(:com.google.android.gms:1286)
+                                                     at gm.a(:com.google.android.gms:1268)
+                                                     at gm.p(:com.google.android.gms:2153)
+                                                     at gc.e(:com.google.android.gms:11223)
+                                                     at bxe.superOnResumeFragments(:com.google.android.gms:2406)
+                                                     at com.google.android.chimera.Activity.onResumeFragments(:com.google.android.gms:384)
+                                                     at com.google.android.chimera.Activity.publicOnResumeFragments(:com.google.android.gms:389)
+                                                     at bxe.e(:com.google.android.gms:469)
+                                                     at gc.onPostResume(:com.google.android.gms:511)
+                                                     at bxe.superOnPostResume(:com.google.android.gms:2401)
+                                                     at com.google.android.chimera.Activity.onPostResume(:com.google.android.gms:375)
+                                                     at bxc.onPostResume(:com.google.android.gms:183)
+                                                     at com.google.android.chimera.Activity.publicOnPostResume(:com.google.android.gms:380)
+                                                     at bxe.onPostResume(:com.google.android.gms:460)
+                                                     at android.app.Activity.performResume(Activity.java:6403)
+                                                     at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3099)
+                                                     at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3141) 
+                                                     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2488) 
+                                                     at android.app.ActivityThread.access$900(ActivityThread.java:153) 
+                                                     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1349) 
+                                                     at android.os.Handler.dispatchMessage(Handler.java:102) 
+                                                     at android.os.Looper.loop(Looper.java:148) 
+                                                     at android.app.ActivityThread.main(ActivityThread.java:5438) 
+                                                     at java.lang.reflect.Method.invoke(Native Method) 
+                                                     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:738) 
+                                                     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:628) 
+05-19 17:42:55.386 12370-12477/? I/WtEventController: Receive am_crash event for pid: 2347
+05-19 17:42:55.388 11852-12266/? W/ActivityManager:   Force finishing activity com.google.android.gms/com.google.android.location.places.ui.placepicker.PlacePickerActivity
+05-19 17:42:55.390 11852-12266/? I/Timeline: Timeline: App_transition_ready time:848832470
+05-19 17:42:55.394 11852-12266/? D/ActivityTrigger: ActivityTrigger activityPauseTrigger 
+05-19 17:42:55.395 11852-12496/? W/InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@fe2fc5d attribute=null, token = android.os.BinderProxy@9d73728
+05-19 17:42:55.395 11852-12266/? D/PowerManagerService: acquireWakeLockInternal: lock=75769552, flags=0x1, tag="*launch*", ws=WorkSource{10012}, uid=1000, pid=11852
+05-19 17:42:55.395 11852-12266/? D/PowerManagerService: updateWakeLockSummaryLocked: mWakefulness=Awake, mWakeLockSummary=0x1
+05-19 17:42:55.395 12370-12477/? D/WtProcessController: onAMPauseActivity callback
+05-19 17:42:55.395 11852-12266/? D/PowerManagerService: updateUserActivitySummaryLocked: mWakefulness=Awake, mUserActivitySummary=0x1, nextTimeout=848933570 (in 101094 ms)
+05-19 17:42:55.396 11852-12266/? D/DisplayPowerController: requestPowerState: policy=BRIGHT, useProximitySensor=false, screenBrightness=41, screenAutoBrightnessAdjustment=0.0, brightnessSetByUser=true, useAutoBrightness=false, blockScreenOn=false, lowPowerMode=false, boostScreenBrightness=false, dozeScreenBrightness=-1, dozeScreenState=UNKNOWN, waitForNegativeProximity=false
+05-19 17:42:55.396 11852-12266/? D/PowerManagerService: updateDisplayPowerStateLocked: mDisplayReady=true, policy=3, mWakefulness=1, mWakeLockSummary=0x1, mUserActivitySummary=0x1, mBootCompleted=true, mScreenBrightnessBoostInProgress=false
+05-19 17:42:55.396 11852-12266/? W/ActivityManager:   Force finishing activity com.example.google.playservices.placepicker/.MainActivity
+05-19 17:42:55.401 12370-12477/? D/WtProcessController: onAMDestroyActivity callback
+05-19 17:42:55.406 11852-11887/? W/BroadcastQueue: Permission Denial: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to ProcessRecord{362a0d7 21095:com.lbe.parallel.intl:mdserver/u0a265} (pid=21095, uid=10265) requires android.permission.READ_LOGS due to sender android (uid 1000)
+05-19 17:42:55.406 11852-11887/? W/BroadcastQueue: Permission Denial: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to ProcessRecord{362a0d7 21095:com.lbe.parallel.intl:mdserver/u0a265} (pid=21095, uid=10265) requires android.permission.READ_LOGS due to sender android (uid 1000)
+05-19 17:42:55.410 2347-2347/? I/Process: Sending signal. PID: 2347 SIG: 9
+05-19 17:42:55.441 502-502/? W/SurfaceFlinger: couldn't log to binary event log: overflow.
+05-19 17:42:55.451 11852-11868/? I/ActivityManager: Process com.google.android.gms.ui (pid 2347) has died
+05-19 17:42:55.451 11852-11868/? D/ActivityManager: cleanUpApplicationRecord -- 2347
+05-19 17:42:55.456 11852-11868/? D/PowerManagerService: updateWakeLockWorkSourceInternal: lock=75769552 [*launch*], ws=WorkSource{10022}
+05-19 17:42:55.456 11852-11868/? D/PowerManagerNotifier: onWakeLockChanging: flags=1, tag="*launch*", packageName=android, ownerUid=1000, ownerPid=11852, workSource=WorkSource{10022}
+05-19 17:42:55.457 3830-3840/? E/ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
+05-19 17:42:55.461 12370-12477/? D/WtProcessController: onAMResumeActivity callback
+05-19 17:42:55.461 12370-12477/? D/WtProcessController: set foreground process size 1 pid:12401pacakgeName:com.miui.home
+05-19 17:42:55.462 11852-11868/? I/Timeline: Timeline: App_transition_ready time:848832542
+05-19 17:42:55.475 11852-12494/? I/Timeline: Timeline: App_transition_ready time:848832555
+05-19 17:42:55.477 12401-14226/? I/RenderThread: RenderThread resumed
+05-19 17:42:55.477 12401-14226/? I/RenderThread: All controllers paused.
+05-19 17:42:55.477 12401-14226/? I/RenderThread: RenderThread paused, waiting for signal
+05-19 17:42:55.478 12401-14226/? I/RenderThread: RenderThread resumed
+05-19 17:42:55.478 12401-14226/? I/RenderThread: All controllers paused.
+05-19 17:42:55.478 12401-14226/? I/RenderThread: RenderThread paused, waiting for signal
+05-19 17:42:55.492 11852-12496/? I/Timeline: Timeline: App_transition_ready time:848832572
+05-19 17:42:55.497 11868-11868/? W/Binder_2: type=1400 audit(0.0:4481359): avc: denied { ioctl } for path="socket:[14537520]" dev="sockfs" ino=14537520 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+05-19 17:42:55.497 11868-11868/? W/Binder_2: type=1400 audit(0.0:4481360): avc: denied { ioctl } for path="socket:[14537520]" dev="sockfs" ino=14537520 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+05-19 17:42:55.516 12860-12860/? D/wpa_supplicant: wlan0: Control interface command 'SIGNAL_POLL'
+05-19 17:42:55.518 11852-12408/? D/PowerManagerService: releaseWakeLockInternal: lock=75769552 [*launch*], flags=0x0
+05-19 17:42:55.518 11852-12408/? D/PowerManagerNotifier: onWakeLockReleased: flags=1, tag="*launch*", packageName=android
